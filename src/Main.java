@@ -6,6 +6,7 @@ public class Main {
         Nota mario = new Nota();
         mario.setNota1(9);
         mario.setNota2(10);
+        mario.setFaltas(40);
 
         mario.resultado();
 

@@ -1,6 +1,19 @@
 public class Nota {
     private double nota1;
     private double nota2;
+    private int faltas;
+
+    public int getFaltas(){
+        return faltas;
+    }
+
+    public void setFaltas(int faltas) {
+        if(faltas>40 || faltas<0){
+            System.out.println("Número de faltas inválido");
+            return;
+        }
+        this.faltas = faltas;
+    }
 
     public void setNota1(int nota){
         if(nota<0 || nota>10){
